@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Massage from "./components/Massage";
+import Services from "./components/Services";
+import Profile from "./components/Profile";
+import Status from "./components/Status";
+import "./slider.scss";
+import Carousel from "./components/Carousel";
+import Contact from "./components/Contact";
+import Maps from "./components/Maps";
+import Footer from "./components/Footer";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='bg-ciri-for'>
+        <Routes>
+          <Route
+            exact
+            path='/'
+            element={
+              <>
+                <Navbar className='' />
+                <Massage />
+                <Services />
+                <Profile />
+                <Status />
+                <Carousel />
+                <Contact />
+                <Maps />
+                <Footer />
+              </>
+            }
+          ></Route>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
