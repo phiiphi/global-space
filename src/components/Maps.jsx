@@ -37,6 +37,7 @@ const Maps = () => {
               frameborder='0'
               scrolling='no'
               marginheight='0'
+              title="myFrame"
               marginwidth='0'
             ></iframe>
           </div>
