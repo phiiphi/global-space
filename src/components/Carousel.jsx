@@ -1,4 +1,3 @@
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -24,7 +23,7 @@ export default function Carousel() {
         industry's standard dummy text ever since the 1500s.
       </p>
       <Swiper
-        pagination={true}
+        pagination={false}
         navigation={true}
         modules={[Pagination, Navigation]}
         className='mySwiper'

@@ -10,7 +10,7 @@ function Nav() {
     <div>
       <nav className=' bg-regal-green text-white'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-          <div className='flex items-center justify-between mx-12 h-16'>
+          <div className='flex items-center justify-between mx-2 md:mx-12 h-16'>
             <div className='flex items-center'>
               <div className='flex'>
                 <ul>
@@ -71,7 +71,7 @@ function Nav() {
           leaveTo='opacity-0 scale-95'
         >
           {(ref) => (
-            <div className='md:hidden' id='mobile-menu'>
+            <div className='ml-6 md:hidden' id='mobile-menu'>
               <div ref={ref} className=' sm:px-3'>
                 <ul>
                   <li
